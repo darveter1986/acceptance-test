@@ -1,9 +1,9 @@
 <?php
 
 
-class Sigma1011Cest
+class BookFashistskiyMechCest
 {
-    const TEST_URL = 'list/q-sigma-10.11/?search%5Bfilter_float_price%3Ato%5D=500';
+    const TEST_URL = 'hobbi-otdyh-i-sport/knigi-zhurnaly/q-Фашистский-меч/';
     const MAIL_TO = 'bondar@atwix.com';
     const MAIL_TEXT = 'Hello!';
 
@@ -21,7 +21,7 @@ class Sigma1011Cest
     public function tryToTest(AcceptanceTester $I)
     {
         $I->amOnPage(self::TEST_URL);
-        $I->see('Ничего не найдено');
+        $I->see('Не найдено ни одного объявления');
     }
 
     public function _before(AcceptanceTester $I)
