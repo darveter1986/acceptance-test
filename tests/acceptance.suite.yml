@@ -14,5 +14,3 @@ modules:
       WebDriver:
         url: 'http://olx.ua/'
         browser: phantomjs
-        capabilities:
-          webStorageEnabled: true
